@@ -93,5 +93,8 @@
         "local_mode": null,
         "local_config_file": null
     },
-    "disable_usage_reporting": false
+    "disable_usage_reporting": false,
+    "npm_dependencies": {
+        "cypress-cucumber-preprocessor": "^4.3.1"
+    }
 }
