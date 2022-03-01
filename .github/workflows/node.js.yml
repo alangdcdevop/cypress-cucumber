@@ -20,4 +20,6 @@ jobs:
           cache: npm
           node-version: 16
       - run: npm install
+      - run: npm install -g browserstack-cypress-cli
+      - run: browserstack-cypress run --sync
       - run: npm run test:web
