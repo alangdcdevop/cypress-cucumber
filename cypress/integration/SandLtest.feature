@@ -1,21 +1,10 @@
-# Feature: Google Main Page
+Feature: SandL Emmail subscription
 
-#   I want to open a search engine
+  As a user i can complete email adress field and submit it.
   
-#   Scenario: Opening a search engine page
-#     Given I open "www.google.com" url
-#     Then I complete field "input" with "Cartman"
 
-#     # input
-
-#     # Eric Cartman | Wiki South Park
-#     # body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.gNO89b
-    
-Feature: Google Main Page
-
-  I want to open a search engine
-  
-  @focus
-  Scenario: Opening a search engine page
+  Scenario: I complete email field and i see GOOD THINGS ARE COMMING message
     Given I open "https://www.serenaandlily.com/" url
-    Then I complete field "#js-search > div > svg" with "Cart"
+    When I complete field "#email-alert-signup-popup-address" with "alanmail@gmail.com"
+    And I click on ".input-block > .signup-popup-button" button
+    Then I see element "#email-alert-signup-popup-optin > :nth-child(2) > .headline" with text "GOOD THINGS ARE COMING"
