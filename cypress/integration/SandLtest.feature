@@ -3,8 +3,8 @@ Feature: Google Main Page
   I want to open a search engine
   
   Scenario: Opening a search engine page
-    Given I open Google page
-    Then I see "Google" in the title
+    Given I open "www.google.com" url
+    Then I complete field "input" with "Cartman"
 
     # input
 
