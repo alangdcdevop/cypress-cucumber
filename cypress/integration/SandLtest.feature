@@ -17,5 +17,5 @@ Feature: Google Main Page
   
   @focus
   Scenario: Opening a search engine page
-    Given I open Google page
-    Then I see "Google" in the title
+    Given I open "https://www.serenaandlily.com/" url
+    Then I complete field "#js-search > div > svg" with "Cart"
