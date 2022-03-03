@@ -21,5 +21,5 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm install -g browserstack-cypress-cli
-      - run: browserstack-cypress run --sync
+#      - run: browserstack-cypress run --sync # i think our browstack licence is down :(
       - run: npm run test:web
